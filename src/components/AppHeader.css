@@ -1,0 +1,130 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.app-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.app-logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.3px;
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.app-nav-link {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
+}
+
+.app-nav-link:hover {
+  background: var(--color-hover);
+  color: var(--color-text-primary);
+}
+
+.app-nav-link.active {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.app-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.header-icon-btn {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.header-icon-btn:hover {
+  background: var(--color-hover);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-surface);
+}
+
+.header-avatar {
+  cursor: pointer;
+}
+
+.header-avatar-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  display: block;
+  object-fit: cover;
+  transition: border-color 0.12s;
+}
+
+.header-avatar:hover .header-avatar-img {
+  border-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .app-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,139 @@
+.personal-info-card {
+  background: var(--color-surface);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.card-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1.5px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.card-action-btn:hover {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.field-value {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  margin: 0;
+  word-break: break-word;
+}
+
+.field-empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.field-input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.15s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.field-textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+}
+
+.btn-primary {
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 1.5px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+
+.btn-secondary:hover {
+  background: var(--color-hover);
+}
